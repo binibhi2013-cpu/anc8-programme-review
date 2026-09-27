@@ -43,6 +43,10 @@ h3 {font-size:1.2rem!important;}
 .anc-record h3 {margin:0 0 12px;color:#155B83;}
 .anc-record p {margin:.5rem 0;line-height:1.55;}
 .anc-record strong {color:#155B83;}
+[data-testid="stTabs"] [role="tablist"] {gap:6px;flex-wrap:wrap;height:auto;overflow:visible;padding-bottom:10px;}
+[data-testid="stTabs"] [role="tab"] {background:#E5EEF3;border-radius:8px;padding:8px 13px;height:auto;color:#155B83;}
+[data-testid="stTabs"] [role="tab"][aria-selected="true"] {background:#155B83;color:white;}
+[data-testid="stSelectbox"] {background:#E9F5F3;border:1px solid #BEDAD7;border-radius:10px;padding:10px 12px;margin:5px 0 10px;}
 @media(max-width:700px){h1{font-size:2rem!important;}[data-testid="stMainBlockContainer"]{padding:1rem;}}
 @media print {[data-testid="stSidebar"],header{display:none!important;}.stApp{background:white;}}
 </style>
@@ -70,7 +74,7 @@ def audience_text(value):
     if not isinstance(value, str):
         return value
     if 'Those pages currently remain development previews' in value:
-        return '**Next: observed attendance and equity.** Page 2 explores attendance and equity; Page 3 examines timing and continuation; Page 4 provides structured programme-review questions.'
+        return '**Continue the review:** use Attendance and equity, Timing and continuation, then Programme review in the page menu.'
     value=value.replace('What Notebook 4 shows','What the evidence shows').replace('Observed Notebook 4 pattern','Observed pattern').replace('Relevant Notebook 4 signals','Relevant evidence')
     value = re.sub(r'frozen Notebook [24] (?:outputs|package|evidence package)', 'verified analytical evidence', value, flags=re.I)
     value = re.sub(r'Notebook [24]|\bNB[24]\b', 'the verified analysis', value)
@@ -123,6 +127,15 @@ def comparison_chart(frame):
         fig.update_layout(height=max(300,len(frame)*40+120),xaxis_title='Paired difference · original metric scale',yaxis_title=None)
         fig.update_yaxes(autorange='reversed')
         return fig, 'Points and 95% confidence intervals show the supplied paired comparisons. The dashed line marks no difference; the three metrics remain distinct.'
+    if {'Category','Weighted mean signed SHAP'}.issubset(frame):
+        values=frame['Weighted mean signed SHAP']
+        fig=go.Figure(go.Bar(x=values,y=frame['Category'],orientation='h',
+            customdata=frame[['Women (n)']],
+            hovertemplate='%{y}<br>Signed contribution: %{x:+.4f}<br>Women: %{customdata[0]:,.0f}<extra></extra>'))
+        fig.add_vline(x=0,line_color=INK,line_width=1)
+        fig.update_layout(height=max(310,len(frame)*36+120),yaxis_autorange='reversed',
+            xaxis_title='Weighted mean signed SHAP · model output scale',yaxis_title=None)
+        return fig, 'Bars show signed model contributions. Positive and negative directions are not intervention effects or subgroup outcome rates. No uncertainty intervals are supplied.'
     ranks=[c for c in frame if 'rank' in c.lower()]
     if 'Predictor' in frame and len(ranks)==4:
         fig=go.Figure(go.Heatmap(z=frame[ranks].to_numpy(),x=['Logistic\npermutation','Random Forest\npermutation','XGBoost\npermutation','XGBoost\nSHAP'],
