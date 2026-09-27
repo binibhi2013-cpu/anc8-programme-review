@@ -1,0 +1,16 @@
+source_region,source_reg_pcode,dashboard_region,nb4_region,analytical_region,mapping_rule
+Addis Ababa,ET14,Addis Ababa,Addis Ababa,True,Direct match
+Afar,ET02,Afar,Afar,True,Direct match
+Amhara,ET03,Amhara,Amhara,True,Direct match
+Benishangul-Gumuz,ET06,Benishangul-Gumuz,Benishangul-Gumuz,True,Direct match
+Central Ethiopia,ET07,Central Ethiopia,Central Ethiopia,True,Direct match
+Contested,ET99,Contested,,False,Retained as separate non-analytical geography
+Dire Dawa,ET15,Dire Dawa,Dire Dawa,True,Direct match
+Gambela,ET12,Gambella,Gambella,True,Name crosswalk: Gambela -> Gambella
+Harari,ET13,Harari,Harari,True,Direct match
+Oromia,ET04,Oromia,Oromia,True,Direct match
+Sidama,ET16,Sidama,Sidama,True,Direct match
+Somali,ET05,Somali,Somali,True,Direct match
+South Ethiopia,ET08,South Ethiopia,South Ethiopia,True,Direct match
+South West Ethiopia,ET11,South West Ethiopia,South West Ethiopia,True,Direct match
+Tigray,ET01,Tigray,Tigray,True,Direct match

@@ -1,0 +1,4 @@
+stage,transition,eligible_population,eligible_unweighted_n,attained_unweighted_n,weighted_attainment_percent,ci_lower_percent,ci_upper_percent,weighted_nonattainment_percent
+1,Resolved ANC information → Any ANC,Women with resolved ANC contact count,6893,5016,77.6,74.86,80.12,22.4
+2,Any ANC → ANC4+,Women with any ANC,5016,3234,67.56,64.66,70.34,32.44
+3,ANC4+ → ANC8+,Women attaining ANC4+,3234,1173,36.55,32.97,40.28,63.45

@@ -1,0 +1,6 @@
+indicator,region_source,estimate_column,group_column,denominator,denominator_n_column,numerator_n_column,psu_column,ci_lower_column,ci_upper_column
+Any ANC,dashboard_attendance/region_any_anc.csv,Any ANC %,Region,Resolved population,Resolved n,Any ANC n,PSUs,95% CI lower,95% CI upper
+ANC4+ among ANC users,dashboard_attendance/region_anc4.csv,ANC4+ %,Region,ANC users,ANC users n,ANC4+ n,PSUs,95% CI lower,95% CI upper
+ANC8+ among ANC4+ women,dashboard_attendance/region_anc8.csv,ANC8+ %,Region,ANC4+ women,ANC4+ women n,ANC8+ n,PSUs,95% CI lower,95% CI upper
+Early ANC,dashboard_attendance/region_early_anc.csv,Early ANC %,Region,ANC-entry women,ANC-entry women n,Early ANC n,PSUs,95% CI lower,95% CI upper
+ANC8+ among early initiators,dashboard_attendance/region_early_anc8.csv,ANC8+ %,Region,Early initiators,Early initiators n,ANC8+ n,PSUs,95% CI lower,95% CI upper

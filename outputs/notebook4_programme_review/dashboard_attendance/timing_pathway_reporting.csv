@@ -1,0 +1,3 @@
+timing_group,timing_unweighted_n,anc4plus_n,anc4plus_percent,anc4plus_ci_lower,anc4plus_ci_upper,anc8plus_n,anc8_given_anc4_percent,anc8_given_anc4_ci_lower,anc8_given_anc4_ci_upper,below_anc8_after_anc4_percent
+Later initiation,2871,1443,52.39,48.85,55.91,265,21.2,17.19,25.85,78.8
+Early initiation,2130,1786,87.38,84.71,89.64,906,48.5,44.05,52.97,51.5

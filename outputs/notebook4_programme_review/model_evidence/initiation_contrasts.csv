@@ -1,0 +1,4 @@
+population,algorithm,specification,weighted_mean_p_later,weighted_mean_p_early,weighted_mean_difference_pp,interpretation
+ANC-entry,Logistic regression,Extended,0.1298,0.3387,20.89,Hypothetical model response; not a causal effect
+ANC-entry,Random Forest,Extended,0.1769,0.3277,15.08,Hypothetical model response; not a causal effect
+ANC-entry,XGBoost,Extended,0.1295,0.3372,20.77,Hypothetical model response; not a causal effect

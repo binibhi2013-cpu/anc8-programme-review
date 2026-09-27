@@ -1,0 +1,10 @@
+population,Algorithm,Metric,Point_estimate,CI_lower,CI_upper,CI_excludes_zero,source_file
+ANC-entry,Logistic regression,Delta_AP,0.0268,-0.031,0.0792,False,outputs/publication_results/supplementary_tables/Table_S6_anc_entry_paired_difference_bootstrap_CI.csv
+ANC-entry,Logistic regression,Delta_AUROC,0.0407,-0.0124,0.0935,False,outputs/publication_results/supplementary_tables/Table_S6_anc_entry_paired_difference_bootstrap_CI.csv
+ANC-entry,Logistic regression,Brier_improvement,0.0041,-0.0084,0.0156,False,outputs/publication_results/supplementary_tables/Table_S6_anc_entry_paired_difference_bootstrap_CI.csv
+ANC-entry,Random Forest,Delta_AP,0.034,-0.0238,0.0946,False,outputs/publication_results/supplementary_tables/Table_S6_anc_entry_paired_difference_bootstrap_CI.csv
+ANC-entry,Random Forest,Delta_AUROC,0.0355,-0.0136,0.081,False,outputs/publication_results/supplementary_tables/Table_S6_anc_entry_paired_difference_bootstrap_CI.csv
+ANC-entry,Random Forest,Brier_improvement,0.0067,-0.0021,0.0147,False,outputs/publication_results/supplementary_tables/Table_S6_anc_entry_paired_difference_bootstrap_CI.csv
+ANC-entry,XGBoost,Delta_AP,0.0218,-0.0428,0.0847,False,outputs/publication_results/supplementary_tables/Table_S6_anc_entry_paired_difference_bootstrap_CI.csv
+ANC-entry,XGBoost,Delta_AUROC,0.0402,-0.0216,0.0967,False,outputs/publication_results/supplementary_tables/Table_S6_anc_entry_paired_difference_bootstrap_CI.csv
+ANC-entry,XGBoost,Brier_improvement,0.0039,-0.0088,0.0156,False,outputs/publication_results/supplementary_tables/Table_S6_anc_entry_paired_difference_bootstrap_CI.csv

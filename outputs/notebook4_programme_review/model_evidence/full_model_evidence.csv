@@ -1,0 +1,22 @@
+predictor,predictor_label,Logistic permutation rank,RF permutation rank,XGB permutation rank,XGB SHAP rank,XGB mean |SHAP|
+wealth_quintile,Household wealth,2,2,1,1,0.5183
+travel_time_min,Travel time to nearest hospital/health centre,5,8,3,2,0.3223
+region,Region,1,1,2,3,0.2081
+religion_group,Religion,3,3,4,4,0.12
+pregnancy_intention,Pregnancy intention,4,13,5,5,0.1134
+maternal_occupation_group,Maternal occupation,8,14,7,6,0.1083
+v012,Maternal age at interview,11,9,16,7,0.081
+partner_education,Partner education,12,19,11,8,0.0785
+household_size,Household size,13,6,10,9,0.0615
+traditional_media_weekly_count,Weekly traditional-media count,14,5,18,10,0.0601
+maternal_education,Maternal education,21,21,19,11,0.0599
+pregnancy_order_group,Pregnancy order,7,7,9,12,0.0543
+partner_occupation_group,Partner occupation,17,15,8,13,0.0515
+preceding_pregnancy_interval_group,Preceding pregnancy interval,10,11,17,14,0.0491
+transport_mode_group,Transport mode to nearest hospital/health centre,20,18,21,15,0.0471
+internet_exposure,Internet exposure,16,10,15,16,0.0405
+previous_pregnancy_history,Previous pregnancy history,6,4,6,17,0.0319
+healthcare_decision_participation,Healthcare decision participation,9,12,12,18,0.0155
+health_insurance,Health insurance,18,17,14,19,0.0113
+residence,Urban/rural residence,19,20,20,20,0.0076
+maternal_current_union_status,Current union status,15,16,13,21,0.0011
